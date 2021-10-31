@@ -85,8 +85,8 @@ public class FlipperDatabaseBrowserPlugin implements FlipperPlugin {
 
             final FlipperObject flipperObject =
                     new FlipperObject.Builder()
-                            .put("action", call.argument("action"))
-                            .put("table", call.argument("table"))
+                            .put("action", (Object) call.argument("action"))
+                            .put("table", (Object) call.argument("table"))
                             .put("results", results)
                             .build();
 
